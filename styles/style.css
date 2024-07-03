@@ -32,10 +32,10 @@ header{
 .logoDiv{
     height: 120px;
     width: 120px;
-    background-image: url(/imagesForWeb/burgerLogo.png);
+    /* background-image: url(/imagesForWeb/burgerLogo.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     cursor: pointer;
     /* border: 1px solid black; */
     border-radius: 50px;
