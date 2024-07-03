@@ -41,9 +41,7 @@ header{
     border-radius: 50px;
     transition: all linear 0.3s;
 }
-.logoDiv:hover{
-    /* transform: scale(1.2) rotate(15deg); */
-}
+
 header ul{
     display: flex;
     gap: 30px;
@@ -186,5 +184,285 @@ header .crossIcon{
     }
     header i{
         display: block;
+    }
+}
+
+
+
+
+.page1HeroSection{
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+}
+.page1HeroSection .leftSidePage1{
+    /* border: 1px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.page1HeroSection .leftSidePage1 .delivaryButtonDiv{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    padding: 0px 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.521);
+    cursor: pointer;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 5px 5px 7px rgb(187, 186, 186);
+}
+.page1HeroSection .leftSidePage1 .delivaryButtonDiv p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.page1HeroSection .leftSidePage1 .delivaryButtonDiv .bikeLogoDiv{
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: aliceblue;
+    transition: all linear 0.3s;
+}
+.page1HeroSection .leftSidePage1 .delivaryButtonDiv:hover{
+    .bikeLogoDiv{
+        transform: scale(1.9);
+    }
+}
+.page1HeroSection .leftSidePage1 h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+}
+.page1HeroSection .leftSidePage1 .order{
+    display: flex;
+    gap: 30px;
+}
+.page1HeroSection .leftSidePage1 .order button{
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--btnColor);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.page1HeroSection .leftSidePage1 .order button:hover{
+    background-color: rgb(219, 33, 0);
+}
+.page1HeroSection .leftSidePage1 .order .orderProcessDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 2px solid var(--btnColor);
+    border-radius: 10px;
+}
+.page1HeroSection .leftSidePage1 .order .orderProcessDiv p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.page1HeroSection .leftSidePage1 .order .orderProcessDiv i{
+    transition: all linear 0.2s;
+    margin-right: 10px;
+}
+.page1HeroSection .leftSidePage1 .order .orderProcessDiv:hover{
+    i{
+        color: rgb(51, 201, 51);
+        transform: scale(1.5);
+    }
+}
+
+
+
+
+.page1HeroSection .rightSidePage2{
+    width: 50%;
+    background-image: url(/imagesForWeb/rightSideBg.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.page1HeroSection .rightSidePage2 .burger1{
+    width: 160px;
+    height: 180px;
+    background-color: rgba(255, 115, 0, 0.185);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.page1HeroSection .rightSidePage2 .burger1 img{
+    position: absolute;
+    top: -40px;
+    left: -30px;
+}
+.page1HeroSection .rightSidePage2 .burger1 h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--textHoverColor);
+}
+.page1HeroSection .rightSidePage2 .burger1 .goDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.page1HeroSection .rightSidePage2 .burger1 .goDiv i{
+    font-size: 18px;
+    transition: all linear 0.2s;
+}
+.page1HeroSection .rightSidePage2 .burger1 .goDiv:hover{
+    i{
+        color: white;
+        transform: translateX(10px) scale(1.5);
+    }
+}
+.page1HeroSection .rightSidePage2 .burger2{
+    width: 160px;
+    height: 180px;
+    background-color: rgba(255, 115, 0, 0.185);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+
+}
+.page1HeroSection .rightSidePage2 .burger2 img{
+    position: absolute;
+    top: -40px;
+    left: -30px;
+}
+.page1HeroSection .rightSidePage2 .burger2 h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--textHoverColor);
+}
+.page1HeroSection .rightSidePage2 .burger2 .goDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    width: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.page1HeroSection .rightSidePage2 .burger2 .goDiv i{
+    font-size: 18px;
+    transition: all linear 0.2s;
+}
+.page1HeroSection .rightSidePage2 .burger2 .goDiv:hover{
+    i{
+        color: white;
+        transform: translateX(10px) scale(1.5);
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .page1HeroSection{
+        width: 100%;
+        padding: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 100px;
+    }
+    .page1HeroSection .rightSidePage1{
+        width: 100%;
+        background-image: url(/imagesForWeb/rightSideBg.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .page1HeroSection .rightSidePage2{
+        width: 100%;
+        background-image: url(/imagesForWeb/rightSideBg.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .page1HeroSection .leftSidePage1 .order{
+        display: flex;
+        gap: 30px;
+        width: 300px;
+        /* border: 1px solid black; */
+    }
+    .page1HeroSection .leftSidePage1 .order button{
+        /* padding: 0px 20px; */
+        border: none;
+        background-color: var(--btnColor);
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+        transition: all linear 0.2s;
+    }
+    .page1HeroSection .leftSidePage1 .order button:hover{
+        background-color: rgb(219, 33, 0);
+    }
+    .page1HeroSection .leftSidePage1 .order .orderProcessDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        background-color: transparent;
+        border: 2px solid var(--btnColor);
+        border-radius: 10px;
+    }
+    .page1HeroSection .leftSidePage1 .order .orderProcessDiv p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .page1HeroSection .leftSidePage1 .order .orderProcessDiv i{
+        transition: all linear 0.2s;
+        margin-right: 10px;
+    }
+    .page1HeroSection .leftSidePage1 .order .orderProcessDiv:hover{
+        i{
+            color: rgb(51, 201, 51);
+            transform: scale(1.5);
+        }
     }
 }
