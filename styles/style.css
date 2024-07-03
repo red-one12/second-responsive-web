@@ -1,20 +1,29 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 html, body{
     height: 100%;
     width: 100%;
 }
+:root{
+    --textHoverColor: rgb(255, 122, 33);
+    --btnColor: rgb(255, 38, 0);
+    --bigTextColor: rgb(206, 0, 0);
+    --pColor: rgb(80, 80, 80);
+}
 .page1{
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 header{
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,4 +36,155 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    transition: all linear 0.3s;
+}
+.logoDiv:hover{
+    transform: scale(1.2) rotate(15deg);
+}
+header ul{
+    display: flex;
+    gap: 30px;
+    margin-left: 150px;
+
+}
+header ul li a{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    transition: all linear 0.2s;
+}
+header ul li a:hover{
+    color: var(--textHoverColor);
+}
+header .logInOutDiv{
+    display: flex;
+    gap: 10px;
+}
+header .logInOutDiv button{
+    height: 35px;
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--btnColor);
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+header .logInOutDiv .signUpBtn{
+    background-color: transparent;
+    color: black;
+    border: 2px solid var(--btnColor);
+}
+header .logInOutDiv button:hover{
+    transform: translateY(-5px);
+}
+header i{
+    font-size: 35px;
+    transition: all linear 0.2s;
+    cursor: pointer;
+    display: none;
+}
+header i:hover{
+    color: var(--bigTextColor);
+    transform: translateX(-10px);
+}
+header .crossIcon{
+    display: none;
+}
+.navSignUpInBox{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    border: 1px solid var(--btnColor);
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(5px);
+}
+.navSignUpInBox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.navSignUpInBox ul li{
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--btnColor); */
+    border: 2px solid var(--btnColor);
+    font-family: 'Poppins';
+    font-size: 12px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.navSignUpInBox ul .homeBtn{
+    background-color: var(--btnColor);
+    a{
+        color: white;
+    }
+}
+.navSignUpInBox ul li:hover{
+    background-color: var(--btnColor);
+    a{
+        color: white;
+    }
+}
+.navSignUpInBox ul li a{
+    color: black;
+}
+.navSignUpInBox .logInOutDiv button{
+    height: 35px;
+    width: 80px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--btnColor);
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all linear 0.2s;
+    cursor: pointer;
+    font-size: 12px;
+}
+.navSignUpInBox .logInOutDiv button:hover{
+    transform: translateY(-5px);
+    background-color: var(--btnColor);
+    color: white;
+}
+.navSignUpInBox .logInOutDiv .signUpBtn{
+    background-color: transparent;
+    border: 2px solid var(--btnColor);
+    color: black;
+}
+@media only screen and (max-width: 950px) {
+    header ul{
+        /* display: flex;
+        gap: 30px; */
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    header ul{
+        display: none;
+    }
+    header .logInOutDiv{
+        display: none;
+    }
+    header i{
+        display: block;
+    }
 }
