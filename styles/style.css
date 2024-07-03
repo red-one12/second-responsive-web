@@ -42,7 +42,7 @@ header{
     transition: all linear 0.3s;
 }
 .logoDiv:hover{
-    transform: scale(1.2) rotate(15deg);
+    /* transform: scale(1.2) rotate(15deg); */
 }
 header ul{
     display: flex;
