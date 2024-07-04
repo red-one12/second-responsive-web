@@ -387,7 +387,7 @@ header .crossIcon{
 @media only screen and (max-width: 850px){
     .page1HeroSection{
         width: 100%;
-        padding: 0px 50px;
+        /* padding: 0px 50px; */
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -422,17 +422,20 @@ header .crossIcon{
 @media only screen and (max-width: 600px){
     .page1HeroSection .leftSidePage1 .order{
         display: flex;
-        gap: 30px;
-        width: 300px;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
         /* border: 1px solid black; */
     }
     .page1HeroSection .leftSidePage1 .order button{
         /* padding: 0px 20px; */
         border: none;
+        /* height: 30px; */
+        width: 140px;
         background-color: var(--btnColor);
         border-radius: 10px;
         font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 14px;
         color: white;
         cursor: pointer;
@@ -443,26 +446,13 @@ header .crossIcon{
     }
     .page1HeroSection .leftSidePage1 .order .orderProcessDiv{
         display: flex;
+        width: 140px;
+        height: 50px;
         justify-content: center;
         align-items: center;
-        padding: 10px 10px;
+        /* padding: 10px 10px; */
         background-color: transparent;
         border: 2px solid var(--btnColor);
         border-radius: 10px;
-    }
-    .page1HeroSection .leftSidePage1 .order .orderProcessDiv p{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-    }
-    .page1HeroSection .leftSidePage1 .order .orderProcessDiv i{
-        transition: all linear 0.2s;
-        margin-right: 10px;
-    }
-    .page1HeroSection .leftSidePage1 .order .orderProcessDiv:hover{
-        i{
-            color: rgb(51, 201, 51);
-            transform: scale(1.5);
-        }
     }
 }
